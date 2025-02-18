@@ -1,0 +1,82 @@
+{
+  "name": "project-analyzer",
+  "displayName": "Project Analyzer",
+  "description": "Analyzes project structure and logs terminal activities for better understanding and debugging.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onTerminal"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "projectAnalyzer.generateStructure",
+        "title": "Project: Generate Structure"
+      },
+      {
+        "command": "projectAnalyzer.toggleLogging",
+        "title": "Project: Toggle Terminal Logging"
+      }
+    ],
+    "terminal": {
+      "profiles": [
+        {
+          "id": "projectAnalyzer.shell-integration",
+          "title": "Terminal Logger",
+          "icon": "terminal"
+        }
+      ],
+      "integrated": {
+        "shellIntegration.enabled": true
+      }
+    },
+    "configuration": {
+      "title": "Project Analyzer",
+      "properties": {
+        "projectAnalyzer.outputPath": {
+          "type": "string",
+          "default": "",
+          "description": "Output directory path for project analysis (relative to workspace root)"
+        },
+        "projectAnalyzer.structureFileName": {
+          "type": "string",
+          "default": "project-structure.md",
+          "description": "Output file name for project structure"
+        },
+        "projectAnalyzer.excludeCommands": {
+          "type": "array",
+          "default": [],
+          "description": "Commands to exclude from terminal recording"
+        },
+        "projectAnalyzer.logFileName": {
+          "type": "string",
+          "default": "terminal.log",
+          "description": "The name of the terminal log file"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.97.0",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.7.3"
+  }
+}
