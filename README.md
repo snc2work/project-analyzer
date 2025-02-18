@@ -66,11 +66,11 @@ Note:
 ## Installation
 
 1. Open VS Code
-2. Open Quick Open (Ctrl+P)
-3. Run the following command:
-   ```
-   ext install project-analyzer
-   ```
+2. Open Extensions view (Ctrl+Shift+X)
+3. Search for "Project Analyzer"
+4. Click Install
+
+Or you can use the Quick Open (Ctrl+P) and run:
 
 ## Usage
 
@@ -103,6 +103,10 @@ Note:
 [MIT License](LICENSE)
 
 ## Release Notes
+
+### 0.0.4
+
+- Updated installation instructions in documentation
 
 ### 0.0.3
 
