@@ -1,6 +1,7 @@
 {
   "name": "project-analyzer",
   "displayName": "Project Analyzer",
+  "publisher": "ProjectAnalyzer001",
   "description": "Analyzes project structure and logs terminal activities for better understanding and debugging.",
   "version": "0.0.1",
   "engines": {
