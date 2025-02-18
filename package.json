@@ -65,7 +65,8 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
+    "compile": "tsc -p ./ && npm run copy-files",
+    "copy-files": "cp package.json out/",
     "watch": "tsc -watch -p ./",
     "lint": "eslint src --ext ts"
   },
@@ -78,5 +79,9 @@
     "eslint": "^9.19.0",
     "mocha": "^10.2.0",
     "typescript": "^5.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snc2work/project-analyzer"
   }
 }
