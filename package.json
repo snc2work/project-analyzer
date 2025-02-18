@@ -3,7 +3,12 @@
   "displayName": "Project Analyzer",
   "publisher": "ProjectAnalyzer001",
   "description": "Analyzes project structure and logs terminal activities for better understanding and debugging.",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "icon": "images/logo.png",
+  "galleryBanner": {
+    "color": "#1E1E1E",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.97.0"
   },

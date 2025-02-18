@@ -2,6 +2,8 @@
 
 A VS Code extension that analyzes project structure and records terminal activities. This tool is designed to help developers efficiently share project overviews when consulting with AI about coding issues.
 
+![logo](images/logo.png)
+
 ## Features
 
 ### 1. Project Structure Analysis (`projectAnalyzer.generateStructure`)
@@ -101,6 +103,14 @@ Note:
 [MIT License](LICENSE)
 
 ## Release Notes
+
+### 0.0.3
+
+- Added detailed documentation and extension logo
+
+### 0.0.2
+
+- Added extension logo
 
 ### 0.0.1
 
