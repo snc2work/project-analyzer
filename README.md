@@ -94,7 +94,7 @@ Note:
 
 ## Contributing
 
-Bug reports and feature improvement suggestions are welcome on our GitHub Issues page.
+- Bug reports and feature improvement suggestions are welcome on our GitHub Issues page.
 
 ## License
 
