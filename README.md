@@ -57,7 +57,7 @@ A terminal operation logging feature that can be controlled via the "Terminal Lo
 
 - Records all operations in the active terminal
 - Start/stop recording with a single click of the button
-- Logs are saved as `terminal.log` in the project's root directory
+- Logs are saved as `terminal-history.txt` in the project's root directory
 
 Note:
 
@@ -85,7 +85,7 @@ Or you can use the Quick Open (Ctrl+P) and run:
 1. Click the "Terminal Log" button in the status bar
 2. The button will be highlighted while recording
 3. Click again to stop recording
-4. Logs are saved in `terminal.log`
+4. Logs are saved in `terminal-history.txt`
 
 ## Primary Use Cases
 
@@ -103,6 +103,10 @@ Or you can use the Quick Open (Ctrl+P) and run:
 [MIT License](LICENSE)
 
 ## Release Notes
+
+### 0.0.6
+
+- Changed the default log file name from `terminalhistory.txt` to `terminal-history.txt`
 
 ### 0.0.5
 

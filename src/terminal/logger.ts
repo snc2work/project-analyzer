@@ -161,7 +161,7 @@ export class TerminalLogger implements vscode.Disposable {
       const logFileName =
         vscode.workspace
           .getConfiguration("terminal-logger")
-          .get<string>("logFileName") || "terminalhistory.txt";
+          .get<string>("logFileName") || "terminal-history.txt";
       const logPath = path.join(workspaceFolder.uri.fsPath, logFileName);
       console.log(`Log file path: ${logPath}`);
 
@@ -243,7 +243,7 @@ export class TerminalLogger implements vscode.Disposable {
           const logFileName =
             vscode.workspace
               .getConfiguration("terminal-logger")
-              .get<string>("logFileName") || "terminalhistory.txt";
+              .get<string>("logFileName") || "terminal-history.txt";
           const logPath = path.join(workspaceFolder.uri.fsPath, logFileName);
           console.log(`Saving to: ${logPath}`);
 
