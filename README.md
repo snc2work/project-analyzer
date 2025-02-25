@@ -104,6 +104,10 @@ Or you can use the Quick Open (Ctrl+P) and run:
 
 ## Release Notes
 
+### 0.0.5
+
+- Changed the default log file name from `terminal.log` to `terminalhistory.txt`
+
 ### 0.0.4
 
 - Updated installation instructions in documentation
